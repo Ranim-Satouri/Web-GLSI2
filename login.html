@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css">
+  <script src="login.js"></script>
+</head>
+<body>
+  <div class="loginbody">
+    <header class="header">
+      <img src="img\etud.png" alt="Logo EtudJob" class="logo1">
+      <ul class="navlist1">
+        <li class="navitem1">
+          <a href="Acceuil.html" class="link1">Accueil</a> <!-- Corrected typo: Acceuil to Accueil -->
+        </li>
+        <li class="navitem1">
+          <a href="inscrit.html" class="link2">Inscription</a>
+        </li>
+      </ul>
+    </header>
+    <div class="loginf">
+      <div class="divim">
+        <img src="img\R (1).png" alt="Login Image" class="loginim">
+      </div>
+      <form class="login_form" action="login.php" method="post" onsubmit="return verif()" name="form">
+        <p class="p1">EtudJob</p>
+        <input
+          name="Email"
+          type="text"
+          class="input"
+          id="email"
+          autocomplete="email"
+          placeholder="Email"
+          value=""
+        />
+        <input
+          name="pwd"
+          type="password"
+          class="inp"
+          id="pwd"
+          autocomplete="current-password"
+          placeholder="Mot de passe"
+          value=""
+        />
+        <br>
+        <input type="submit" class="button" value="Login">
+        <p class="p2">Vous n'avez pas encore un compte?</p>
+        <div class="ins">
+          <a href="inscrit.html" class="inscrivez">Inscrivez-vous</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,400 @@
+*{
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+.inscritbody{
+  background-image: url(img/back.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.insheader {
+  height: 64px;
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: transparent;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  top: 0px;
+}
+
+.insheader .link1 {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin-right: 0px;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+
+.insheader .link2 {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 18px;
+  transition: color 0.3s;
+  
+}
+.insnavlist {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: flex-end;
+}
+.insnavitem {
+  margin-left: 40px;
+  color: white;
+  text-decoration: none;
+  
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.insheader a:hover {
+  color: #817139;
+}
+.inslogo {
+  position: absolute;
+  top: 50%;
+  left: 16px; 
+  transform: translateY(-50%);
+  height: 100px;
+  width: 192px;
+  padding-top: 38px;
+}
+
+.p1inscrit{
+  text-shadow: 2px 4px 19px #ffe5ad;
+  font-family: math;
+  color:#3d3322;
+  font-size: 36px;
+  padding-top: 27px;
+  padding-bottom: 43px;
+  text-align: center;
+}
+.tabcontent{
+  width: 602px;
+  height: fit-content;
+  background-color: #fcfcfc;
+  border: 2px solid black;
+  border-radius: 21px;
+  /*display: flex;
+  flex-direction: row;*/
+  box-shadow: 9px 8px 0px 0px rgba(0, 0, 0, 0.2);
+  margin-top: 103px;
+     
+}
+.labelinput {
+  display: flex;
+  margin-bottom: 5px;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 56px;
+}
+.labelinput label
+{
+  position: relative;
+  bottom: -4px;
+  margin: 7px;
+  font-family: monospace;
+
+}
+.inputinscrit{
+    margin-right: -31px;
+    margin-left: 10px;
+    width: 428px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #100f0f;
+    background-color: #fcfcfc;
+    padding: 8px;
+}
+.labelinput1 {
+  position: inherit;
+  display: flex;
+  flex-direction: row;
+  padding-left: 9px;
+  
+  /*
+  margin-left: 54px; /* center the element horizontally 
+  margin-right: auto; /* center the element horizontally */
+ /* padding-bottom:10px ;
+  margin-top: 22px;
+  */
+}
+
+/*.labelinput1 label {
+  position: relative;
+  left: 48px;
+  bottom: 27px;
+  margin: 7px;
+  font-family: monospace;
+  
+}
+.prenom{
+font-family: monospace;
+position: relative;
+left: 69px;
+bottom: 27px;
+margin: 7px;
+}*/
+.labelinput1 input{
+ /* margin-right: -31px;
+  margin-left: 10px;
+  width: 224px;
+  border: 2px solid #e5e5e5;*/
+    margin-right: -30px;
+    margin-left: 56px;
+    width: 224px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #100f0f;
+    background-color: #fcfcfc;
+    width: 205px;
+
+}
+   .labelinput5  {
+  display: flex;
+  margin-bottom: 5px;
+  align-items: flex-start;
+  flex-direction: row;
+  padding-left: 22px;
+  font-family: monospace;
+  margin-left: 9px; 
+  margin-right: auto; 
+  padding-bottom:10px ;
+  margin-top: 22px;
+  position: inherit;
+ 
+} 
+
+/*.labelinput5 label {
+  position: relative;
+  left: 48px;
+  bottom: 27px;
+  margin: 7px;
+  font-family: monospace;
+}*/
+#niveau {
+  margin-left: 56px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #100f0f;
+  background-color: #fcfcfc;
+  width: 188px;
+}
+#etab {
+  margin-left: 56px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #100f0f;
+  background-color: #fcfcfc;
+  width: 188px;
+}
+
+.inputinscrit6 {
+  display: flex;
+  margin-bottom: 5px;
+  flex-direction: column-reverse;
+  padding-left: 58px;
+  align-items: flex-start;
+  padding-top: 27px;
+
+}
+
+.inputinscrit6 {
+  display: flex;
+  margin-bottom: 5px;
+  flex-direction: column-reverse;
+  padding-left: 58px;
+  align-items: flex-start;
+  padding-top:35px;
+}
+.inputinscrit6 label{
+  position: relative;
+  bottom: 145px;
+  font-family: monospace;
+  margin-left: 5px;
+}
+.inputinscrit6{
+  margin-left: -5px;
+  width: 440px;
+}
+
+.inputinscrit5{
+
+  /* width: 210px; 
+   height: 26px;
+  margin-right: 57px;
+  margin-left: -15px;
+  border: 2px solid #e5e5e5;*/
+  margin-left: 56px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #100f0f;
+  background-color: #fcfcfc;
+  width: 188px;
+
+}
+
+.radios {
+  display: flex;
+  flex-direction: row;
+  margin-left:-91px; /* Add margin for spacing between radio buttons */
+}
+
+
+/*.bottom1
+{
+  font-weight: bold;
+  font-size: 16px;
+  background-color: #e9d6b4;
+  width: 200px;
+  height: 29px;
+  border: none;
+  margin: 20px auto; /* Center horizontally */
+ /* display: block;
+  
+}
+.bottom1:hover {
+  background-color: #faf6e8;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}*/
+.bottom1 {
+  border-radius: 4px;
+  font-weight: bold;
+  background-color: #e9d6b4;
+  width: 200px;
+  height: 29px;
+  border: none;
+  color: #000000;
+  text-align: center;
+  font-size: 20px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 20px auto;
+  display: block;
+}
+
+.bottom1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.bottom1 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.bottom1:hover span {
+  padding-right: 25px;
+}
+
+.bottom1:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.labelinput3{
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  /* align-content: stretch; */
+  justify-content: center;
+}
+.labelinput3 label{
+  padding: 20px;
+  justify-content: center;
+  margin-right: 20px;
+}
+.labelinput4 {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: center;
+    margin-right: 18px;
+}
+.pgenre{
+  left: 75px;
+  position: relative;
+  font-size: 15px;
+  margin-top: 32px;
+  top: -1px;
+  font-family: monospace;
+}
+.prole{
+  text-align: center;
+  right: 167px;
+  position: relative;
+  font-size: 14px;
+  margin-top: 19px;
+  /* top: 12px; */
+  font-family: monospace;
+}
+.petab {
+  position: relative;
+  left: 91px;
+  bottom: 27px;
+  margin: 7px;
+  font-family: monospace;
+}
+
+/* For radio buttons in labelinput4 */
+.labelinput4 input[type="radio"] {
+  transform: scale(1.4);
+  margin: 6px;
+  margin-left: 10px; /* Add some space between radio button and label */
+}
+
+/* For radio buttons in labelinput3 */
+.labelinput3 input[type="radio"] {
+  transform: scale(1.4);
+  margin: 6px;
+  margin-left: 10px;
+  
+
+}
+
+
+#description {
+  
+margin-top: 20px;
+width: 484px;
+resize: none;
+border-color: #9e9e9e;    
+outline: none;
+height: 100px; 
+overflow: hidden;
+padding: 10px; /* Espacement interne pour le texte */
+border: 2px solid #ccc; /* Bordure subtile */
+border-radius: 8px; /* Bords arrondis */
+resize: none; /* Permet à l'utilisateur de changer la taille verticalement */
+outline: none; /* Supprime l'outline par défaut au focus */
+box-shadow: none; /* Pas de shadow pour un look plus net */
+transition: border-color 0.3s, box-shadow 0.3s; /* Transition douce pour border et shadow */
+font-size: 16px; /* Taille de texte appropriée */
+color: #333; /* Couleur du texte */
+background-color: #fff; /* Couleur de fond */ 
+}
+#description:focus {
+outline: none; /* Remove the default focus outline */
+border-color: #5a5a5a; /* Change border color on focus */
+box-shadow: 0 0 8px rgba(0, 102, 204, 0.3); /* Légère ombre portée au focus */
+}
+
+#description::placeholder {
+color: #aaa; /* Couleur du placeholder */
+}

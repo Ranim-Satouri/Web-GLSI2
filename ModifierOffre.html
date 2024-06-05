@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modifier Offre</title>
+  <link rel="stylesheet" href="ModifierOffre.css">
+  <script src="ModifierOffre.js"></script>
+</head>
+<body>
+  <div class="background">
+    <div class="navbar"> 
+        <header class="header">
+            <img src="img/etud.png" alt="" class="logo">
+            <ul class="navlist">
+            <li class="navitem">
+                <a href="etudiant.html" class="link">
+                <img src="img/maison.png" alt="Acceuil" class="icon">
+                <p class="picon">Acceuil</p>
+                </a>
+            </li>
+            <li class="navitem">
+                <a href="profil.html" class="link">
+                <img src="img/utilisateur.png" alt="Save Offres" class="icon">
+                <p class="picon">Profil</p>
+                </a>
+            </li>
+            <li class="navitem">
+                <a href="Acceuil.html" class="link">
+                <img src="img/bloquer.png" alt="Log Out" class="icon">
+                <p class="picon">Deconnexion</p>
+                </a>
+            </li>
+            </ul>
+        </header>
+    </div>
+    <div class="aj"> 
+      <div class="loginf">
+        <form
+          action=""
+          method="post"
+          class="login_form"
+          name="forme"
+          onsubmit="return verif()"
+        >
+          <p class="p1">Modifier Offre</p>
+
+          <div class="inputGroupp">
+            <label for="Titre" class="labele1">
+              Titre
+            </label>
+            <input
+              class="inputinscrit"
+              type="text"
+              id="titre"
+              name="titre"
+              value="Titre de l'offre"
+              name="titre"
+            />
+          </div>
+          <div class="drops">
+            <div class="Catdrop">
+              <label for="categorie" class="labele2">
+                Catégorie
+              </label>
+              <select
+                class="select"
+                name="categorie"
+              >
+                <option value="0">Sélectionner une catégorie</option>
+                <option value="1">Catégorie 1</option>
+                <option value="2">Catégorie 2</option>
+                <option value="3">Catégorie 3</option>
+              </select>
+            </div>
+            <div class="Lieudrop">
+              <label for="lieu" class="labele3">
+                Lieu
+              </label>
+              <select
+                class="select"
+                name="lieu"
+              >
+                <option value="0">Sélectionner un lieu</option>
+                <option value="Tunis">Tunis</option>
+                <option value="Sousse">Sousse</option>
+                <option value="Sfax">Sfax</option>
+              </select>
+            </div>
+          </div>
+          <div class="inputGroupp">
+            <label for="description" class="labele4">
+              Description
+            </label>
+            <textarea
+              name="description"
+              id="description"
+              
+              required
+              class="inputdesc"
+            >
+            Description de l'offre
+            </textarea>
+          </div>
+          <div class="btndiv">
+            <button type="submit" class="btn">
+              Modifier Offre
+            </button>
+          </div>
+        </form>
+      </div>  
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+.deleteoffre {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .deleteoffre:hover {
+    background-color: #bd2130;
+  }
+.form{
+    display: flex;
+    justify-content: flex-end;
+}
+.action{
+    width: 100px;
+    text-align: center;
+}
+.id{
+    width: 120px;
+}

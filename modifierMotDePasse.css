@@ -1,0 +1,376 @@
+*{
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+.Modifiermdpbody{
+  background-image: url(img/back.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header {
+  height: 64px;
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: transparent;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  top: 0px;
+}
+
+.mef {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 600px;
+}
+ 
+.inslogo {
+  position: absolute;
+  top: 50%;
+  left: 16px; 
+  transform: translateY(-50%);
+  height: 100px;
+  width: 192px;
+  padding-top: 38px;
+}
+
+.p1inscrit{
+  text-shadow: 2px 4px 19px #ffe5ad;
+  font-family: math;
+  color:#3d3322;
+  font-size: 36px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  text-align: center;
+}
+.tabcontent{
+  width: 652px;
+  height: fit-content;
+  background-color: #fcfcfc;
+  border: 2px solid black;
+  border-radius: 21px;
+  /*display: flex;
+  flex-direction: row;*/
+  box-shadow: 9px 8px 0px 0px rgba(0, 0, 0, 0.2);
+  margin-top: 103px;
+     
+}
+.labelinput {
+  display: flex;
+  margin-bottom: 5px;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 480px;
+}
+.labelinput label
+{
+  position: relative;
+  margin: 6px;
+  font-family: monospace;
+}
+.inputinscrit{
+  width: 484px;
+  border: 2px solid #e5e5e5;
+  height: 30px;
+  outline: none;
+  border: 2px solid #ccc; 
+  border-radius: 8px; 
+  box-shadow: none; 
+  transition: border-color 0.3s, box-shadow 0.3s; 
+  font-size: 16px; 
+  color: #333; 
+  background-color: #fff; 
+}
+.inputinscrit:focus {
+  border-color: #0066cc; 
+  box-shadow: 0 0 8px rgba(0, 102, 204, 0.3); 
+}
+.inputinscrit::placeholder {
+  color: #aaa;
+}
+
+.labelinput1 {
+  position: inherit;
+  display: flex;
+  flex-direction: row;
+  padding-left: 36px;
+  
+  /*
+  margin-left: 54px; /* center the element horizontally 
+  margin-right: auto; /* center the element horizontally */
+ /* padding-bottom:10px ;
+  margin-top: 22px;
+  */
+}
+
+.labelinput1 label {
+  position: relative;
+  left:30px;
+  /* margin-right: 10px;  add some space between the labels */
+  font-family: monospace;
+ 
+  
+}
+.prenom{
+font-family: monospace;
+position: relative;
+left: 48px;
+}
+.inputinscrit1{
+margin-right: -6px;
+margin-left: -2px;
+  width: 223px; 
+  border: 2px solid #e5e5e5;
+
+}
+.labelinput5 {
+  display: flex;
+  margin-bottom: 5px;
+  align-items: flex-start;
+  flex-direction: row;
+  padding-left: 22px;
+  font-family: monospace;
+  padding-top: 3vw;
+  /*
+  margin-left: 54px; /* center the element horizontally 
+  margin-right: auto; /* center the element horizontally */
+ /* padding-bottom:10px ;
+  margin-top: 22px;
+  */
+}
+
+.labelinput5 label {
+  position: relative;
+  left:41px;
+  /* margin-right: 10px;  add some space between the labels */
+  font-family: monospace;
+}
+.inputinscrit5{
+  margin-right: -2px;
+  margin-left: -18px;
+  width: 210px; 
+  border: 2px solid #e5e5e5;
+  
+}
+.inputinscrit6 {
+  display: flex;
+  margin-bottom: 5px;
+  flex-direction: column-reverse;
+  padding-left: 58px;
+  align-items: flex-start;
+  padding-top:35px;
+}
+.inputinscrit6 label{
+  position: relative;
+  bottom: 90px;
+  font-family: monospace;
+}
+.inputinscrit6{
+  margin-left: -5px;
+  width: 440px;
+}
+.inputinscrit6:focus {
+  outline: none; /* Remove the default focus outline */
+  border-color: #5a5a5a; /* Change border color on focus */
+}
+
+.radios {
+  display: flex;
+  flex-direction: row;
+  margin-left:-91px; /* Add margin for spacing between radio buttons */
+}
+
+.bottom1
+{
+  font-weight: bold;
+  font-size: 13px;
+  margin-top: -2px;
+  background-color:#e9d6b4;
+  margin: 20px;
+  margin-top: 40px;
+  width:30%;
+ min-height: 28px;
+ border:none;
+
+}
+.bottom1:hover {
+  background-color: #faf6e8;
+}
+.labelinput3{
+  display: flex;
+  flex-direction: row;
+  padding: 17px;
+}
+
+
+.prole{
+  
+  right: 179px;
+  position: relative;
+  font-size: 14px;
+  margin-top: 11px;
+  top: 21px;
+  font-family: monospace;
+}
+.petab {
+  left: 91px;
+  position: relative;
+  font-family: monospace;
+}
+
+/* For radio buttons in labelinput4 */
+.labelinput4 input[type="radio"] {
+transform: scale(0.6); /* Adjust the scale factor as needed */
+margin-right: 5px; /* Add some space between radio button and label */
+margin-top: 20px; 
+  
+}
+
+.labelinput4 {
+  display: flex;
+  justify-content: center; /* Centre les éléments horizontalement */
+  margin-top: 3vw; /* Espace entre les groupes de boutons radio */
+  margin-bottom: 0;
+  
+}
+
+.radioWrapper {
+  display: flex;
+  flex-direction: column; /* Aligne les éléments verticalement */
+  align-items: center; /* Centre les éléments horizontalement */
+}
+
+.lab4 {
+  margin-top: 10px; /* Espace entre chaque bouton radio et son label */
+ 
+}
+.pgenre{
+  right: 211px;
+  position: relative;
+  font-size: 15px;
+  margin-top: 11px;
+  top: 21px;
+  font-family: monospace;
+}
+ 
+
+.header {
+height: 56px;
+position: absolute;
+z-index: 999;
+width: 100%;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+background-color: white;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+position: fixed;
+}
+
+.link {
+color: rgb(0, 0, 0);
+text-decoration: none;
+
+font-size: 16px;
+transition: color 0.3s;
+display: flex;
+justify-content: center;
+flex-direction: row;
+align-items: center;
+}
+
+
+.navlist {
+display: flex;
+list-style: none;
+margin-right: 20px;
+padding: 0;
+align-items: flex-end;
+}
+.navitem {
+color: white;
+text-decoration: none;
+width: 120px;
+height: 53.44px;
+font-size: 18px;
+transition: color 0.3s;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.navitemsave {
+color: white;
+text-decoration: none;
+width: 80px;
+height: 53.44px;
+font-size: 18px;
+transition: color 0.3s;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.navitemsave:hover {
+background-color: #f5f5f5;
+}
+
+.header a:hover {
+color: #817139;
+}
+.logo {
+position: absolute;
+top: 45%;
+left: 16px; 
+transform: translateY(-50%);
+height: 90px;
+width: 192px;
+padding-top: 38px;
+}
+
+.saveb2{
+width: 45px;
+height: 55px;
+
+}
+.icon{
+width: 20px;
+height: 25px;
+padding-left:10px;
+padding-bottom: 10px;
+}
+
+.logout{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+}
+
+.picon{
+color: rgb(0, 0, 0);
+text-decoration: none;
+
+font-size: 15px;
+padding-left: 8px;
+transition: color 0.3s;
+}
+
+
+
+.navitem:hover {
+background-color: #f5f5f5;
+}
+
+.navitem:active {
+background-color: #e5e5e5;
+}
+

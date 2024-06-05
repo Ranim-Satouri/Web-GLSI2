@@ -1,0 +1,705 @@
+*{
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+.background{
+  width:100%;
+  height: 100vh;
+  position: relative;
+}
+
+.header {
+  height: 64px;
+  position:fixed;
+  
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background : rgba(0, 0, 0, 0.3);
+  background-color:  #849483;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  z-index: 1000;
+  transition: background 0.5s ease; /* Transition en douceur pour le fond */
+}
+/* ll animationn mta3 appearing ma3 links */
+
+
+.header .link1:hover,
+.header .link2:hover {
+color: #000; /* Change color on hover */
+}
+
+.header .link1 {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin-left: 30px;
+  font-size: 18px;
+
+  transition: color 0.3s ease, opacity 1s ease; /* Transition opacity over 1 second */
+}
+ 
+.header .link2 {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 18px;
+  transition: color 0.3s ease, opacity 1s ease; /* Transition opacity over 1 second */
+}
+.navlist {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: flex-end;
+}
+.navitem {
+  margin-left: 40px;
+  color: white;
+  text-decoration: none;
+  
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.header a:hover {
+  color: #817139;
+}
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 16px; 
+  transform: translateY(-50%);
+  height: 100px;
+  width: 192px;
+  padding-top: 38px;
+}
+/*animation ll navbar bech tothhor b chwaya b chwaya */
+@keyframes fadeInNavbar {
+  0% {
+    opacity: 0;
+    background-color: rgba(230, 219, 208, 0); /* Fully transparent */
+  }
+  100% {
+    opacity: 1;
+    background-color: rgba(230, 219, 208, 0.8); /* Semi-transparent with gradient */
+  }
+}
+
+.header {
+  opacity: 0;
+  background-color: rgba(230, 219, 208, 0); /* Start with fully transparent background */
+  animation: fadeInNavbar 1s forwards; /* Apply the fade-in animation */
+}
+
+.navitem {
+  position: relative; /* Ensure relative positioning for pseudo-element */
+}
+
+.navitem .link2 {
+display: inline-block;
+width: auto;
+
+}
+.navitem .link1 {
+display: inline-block;
+width: auto;
+position: relative;
+}
+
+
+.navitem .link2::after {
+content: '';
+position: absolute;
+bottom: -2px;
+left: 0;
+width: 0;
+height: 2px;
+background-image: linear-gradient(to right, #817139, #F4E5C6);
+transition: width 0.3s ease;
+
+}
+.navitem .link1::after{
+left: 0; /* Start the underline at the left edge of the link */
+content: '';
+position: absolute;
+bottom: -2px;
+left: 0;
+width: 0;
+height: 2px;
+background-image: linear-gradient(to right, #817139, #F4E5C6);
+transition: width 0.3s ease;
+
+  
+}
+.navitem .link1:hover::after
+{
+width: 100%;
+
+}
+.navitem .link2:hover::after{
+width: 85%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.backgroundimg{
+  background-image: url(./img/homm.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.animated-background {
+  opacity: 0; /* Start with the background invisible */
+  animation: fadeInBackground 2s forwards; /* Apply the fade-in animation */
+}
+
+@keyframes fadeInBackground {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.description{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-color: #ffffff;;
+}
+.pdisc {
+  width: 700px;
+  font-family: snagajob nib pro, Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 23px;
+  margin: 20px 0;
+  opacity: 0; /* Start with the paragraph invisible */
+  animation: slideInFromLeft 1s forwards; /* Apply the slide-in animation */
+}
+
+/* Define the slide-in animation */
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%); /* Start from the left */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* End at the original position */
+  }
+}
+
+.backgrounddiv {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+/*tawa chnekhdem 3ala title*/
+.animated-title {
+  opacity: 0; /* Start with the title invisible */
+  animation: slideIn 1s forwards; /* Apply the slide-in animation */
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%); /* Start position outside the viewport */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* End position in the center */
+  }
+}
+.animated-title{
+  font-family: snagajob nib pro, Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-weight: 700;
+  line-height: 52px;
+  font-size: 60px;
+  letter-spacing: -.03rem;
+  color: black;
+  padding-top: 120px;
+}
+
+
+
+.typed-text {
+overflow: hidden; /* Hide overflow text */
+border-right: .15em solid orange; /* Add a blinking cursor effect */
+white-space: nowrap; /* Prevent line breaks */
+margin: 0; /* Remove default margins */
+letter-spacing: .15em; /* Adjust letter spacing for clarity */
+animation: typing 4s steps(40, end), blink-caret .75s step-end infinite; /* Apply typing animation */
+}
+
+@keyframes typing {
+from {
+  width: 0; /* Start with no width */
+}
+to {
+  width: auto; /* Increase width to show entire text */
+}
+}
+
+@keyframes blink-caret {
+from, to {
+  border-color: transparent; /* Start and end with transparent border */
+}
+50% {
+  border-color: orange; /* Blinking cursor effect */
+}
+}
+
+
+
+
+
+
+
+
+animated-title::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: radial-gradient(circle, transparent 20%, gold 30%);
+  opacity: 0;
+  border-radius: 50%;
+  animation: sparkle 2s linear infinite;
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.boxim{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: cover;
+}
+.blocim{
+  height: 400px;
+  width: calc(100% - 200px);
+  display: flex;
+  flex-direction: row;
+  align-items: right;
+  justify-content: center;
+
+}
+.blocim1{
+  width: calc(100% - 200px);
+  height: 400px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  
+}
+.image1,
+.image2,
+.image3,
+.image4 {
+  width: 50%;
+  height: 400px;
+  background-repeat: no-repeat;
+  border: 2px solid transparent; /* Initial border with a transparent color */
+  border-radius: 10px; /* Border radius for rounded corners */
+  box-shadow: 0 0 0 0 #C0C0C0; /* Initial box shadow with the same color as the border */
+  transition: transform 0.3s, box-shadow 0.3s, border 0.3s; /* Add box-shadow and border to the transition */
+}
+
+.image1:hover,
+.image2:hover,
+.image3:hover,
+.image4:hover {
+  box-shadow: 0 0 10px 6px #A17C6B; /* Increase the box shadow on hover for a 3D effect */
+  transform: scale(0.99); /* Decrease size slightly on hover */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+.parap {
+  width: 600px; /* Largeur du conteneur */
+  margin-top: 9%; /* Centrer horizontalement */
+  text-align: left; /* Justifier le texte */
+  margin-left: -10%;
+  font-family: Arial, sans-serif; /* Police de caractères */
+  font-size: 18px; /* Taille de la police */
+  line-height: 1.5; /* Hauteur de ligne */
+  font-weight: bold; /* Gras */
+}
+
+
+
+
+
+.image{
+  width: 100%;
+  height: 100%;
+}
+
+.para{
+  
+  width: 50%;
+  height: 400px;
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  
+}
+
+ .parah2 {
+  font-family: "snagajob nib pro", "Iowan Old Style", "Apple Garamond", Baskerville, Times New Roman, "Droid Serif", Times, "Source Serif Pro", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 300;
+  font-size: 3rem; /* Équivalent à 60px pour une meilleure lisibilité */
+  line-height: 1.2; /* Ajustez selon vos préférences */
+  letter-spacing: -0.03em; /* Équivalent à -.03rem pour un espacement négatif */
+  text-align: left; /* Justifier le texte */
+   
+  margin-top: -100px;
+  font-weight: bold; /* Gras */
+font-style: italic; /* Italique */
+color:#548687;
+}
+.parah22
+{
+  font-family: "snagajob nib pro", "Iowan Old Style", "Apple Garamond", Baskerville, Times New Roman, "Droid Serif", Times, "Source Serif Pro", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 300;
+  font-size: 2.5rem; /* Équivalent à 60px pour une meilleure lisibilité */
+  line-height: 1.2; /* Ajustez selon vos préférences */
+  letter-spacing: -0.03em; /* Équivalent à -.03rem pour un espacement négatif */
+  text-align: left; /* Justifier le texte */
+   
+  margin-top: -100px;
+  font-weight: bold; /* Gras */
+font-style: italic; /* Italique */
+color:#548687;
+
+}
+/*description mta3 paragraphe */
+
+
+ 
+
+@keyframes revealText {
+  0% {
+    width: 0; /* Start with no width */
+  }
+  100% {
+    width: 100%; /* End with full width */
+  }
+}
+.parainterne{
+  width: 600px;
+  margin-left: 50px;
+}
+
+.parainterne.clicked {
+  border-color: #C0C0C0; /* Change border color when clicked */
+}
+
+.parainterne:hover {
+  border-color: #C0C0C0; /* Change border color on hover */
+  border-radius: 10px; /* Border radius for rounded corners */
+  transition:   0.3s ease; /* Transition for border color change */
+}
+ 
+.text{
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  height: 300px;
+  width: 900px;
+}
+.p2{
+  color:#817139;
+  font-size: 60px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family:'Times New Roman', Times, serif;
+  text-align: left;
+}
+.qu1{
+color:#000000;
+font-size: 50px;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+text-align: left;
+font-family:'Times New Roman', Times, serif;
+padding-bottom: 20px;
+}
+
+.span{
+  color:#817139;
+  font-size: 35px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: left;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+#p1{
+  color:#000000;
+  font-size: 25px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: left;
+  font-family:'Times New Roman', Times, serif;
+  padding-top: 20px;
+}
+
+.p3{
+  color:#000000;
+  font-size: 25px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: left;
+  font-family:'Times New Roman', Times, serif;
+  padding-top: 20px;
+}
+
+.bloc{
+  width:cover;
+  height: 600px;
+  background-color: rgb(163, 173, 160);
+}
+
+#acc1 {
+  background: linear-gradient(to right, #9ff4eb, #64f4c1);
+  /*background-repeat: no-repeat; /* Prevent repeating of the image */
+  width: cover; /* Cover the entire background */
+  /*background-position: center; /* Center the background image */
+  /*background-attachment: fixed;*/
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#acc2{
+  width: 950px;
+  height: 600px;
+  background-color:rgb(255, 255, 255);
+  border-radius: 50px;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+#im1{
+  margin-top: 50px;
+  width: 50px;
+  height: 50px;
+}
+#im2{
+  width:100px;
+  height: 100px;
+ 
+}
+#inscrit{
+  width: 100%;
+  height: 1000px;
+}
+
+
+
+
+
+/* #acc1{
+  background-image: linear-gradient(to right, #d3f1ec, #b9b9f7);
+  width: cover;
+  height: 100%;
+  
+} */
+
+
+
+.form-table label {
+    margin-right: -50px; /* Ajustez cette valeur selon vos besoins */
+    text-align: justify;
+   
+}
+  
+  .form-table label {
+    margin-right: 10px; /* Ajustez cette valeur selon vos besoins */
+    
+    
+  }
+ 
+table{
+    margin-left: 90px;
+}
+#role{
+    margin-right: 30px;
+}
+
+  
+
+.registration_form{
+    width: 500px;
+    margin-top: 400px;
+    margin-left: 300px;
+}
+#emp{
+    margin-left: 20px;
+}
+#but{
+    border-radius: 10px;
+    
+}
+#im5{
+    width: 450px;
+    height: 400px;
+    margin-left: 600px ;
+    margin-top: -1000px;
+    margin-bottom: 100px;
+
+}
+#log{
+    margin-left: 700px;
+    width: 200px;
+    margin-top: -130px;
+}
+#radi{
+    width: 300px;
+    margin-left: -100px;
+}
+#logo{
+    width: 130px;
+    height: 150px;
+    margin-top: -1200px;
+    margin-right: 490px;
+}
+input{
+    
+    white-space: nowrap;
+}
+
+/* #link1{
+text-align: right;
+padding-left: 30px;
+color: rgb(88, 155, 133);
+margin-top: 20px;
+
+} */
+#l2{
+  margin-left: 30px;
+  margin-right: 10px;
+}
+/* #acc2{
+  width: 950px;
+  height: 600px;
+  background-color: #ffffff;
+  margin-left: 279px;
+  margin-top:100px;
+  border-radius: 40px;
+  border: 2px solid rgb(13, 10, 10);
+} */
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: #ebe2d9;
+  height: 150px;
+}
+.contact{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 20%;
+  height: 120px;
+}
+.icon{
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+.link{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.picon{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  
+  font-size: 18px;
+  padding-left: 8px;
+  transition: color 0.3s;
+}
+
+.labels{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000000;
+  margin: 20px;
+  height: 120px;
+  width: 500px;
+}
+.copyright{
+  width: 100%;
+  background-color: #ebe2d9;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.copyrightp{
+  color: #3f3b3b;
+}

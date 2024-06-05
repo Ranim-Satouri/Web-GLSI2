@@ -1,0 +1,429 @@
+*{
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+.loginbody{
+  background-image: url(img/back.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 130vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header {
+  height: 64px;
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: transparent;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  top: 0px;
+}
+.inslogo {
+  position: absolute;
+  top: 50%;
+  left: 16px; 
+  transform: translateY(-50%);
+  height: 100px;
+  width: 192px;
+  padding-top: 38px;
+}
+
+.p1inscrit{
+  text-shadow: 2px 4px 19px #ffe5ad;
+  font-family: math;
+  color:#3d3322;
+  font-size: 36px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-left: 201px;
+}
+
+.tabcontent{
+  width: 602px;
+  height: fit-content;
+  background-color: #fcfcfc;
+  border: 2px solid black;
+  border-radius: 21px;
+  /*display: flex;
+  flex-direction: row;*/
+  box-shadow: 9px 8px 0px 0px rgba(0, 0, 0, 0.2);
+  margin-top: -250px;
+     
+}
+.labelinput {
+  display: flex;
+  margin-bottom: 5px;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 56px;
+}
+.labelinput label
+{
+  position: relative;
+  bottom: -19px;
+  margin: 6px;
+  font-family: monospace;
+}
+.inputinscrit{
+  width: 484px;
+  border: 2px solid #e5e5e5;
+ 
+  
+
+}
+.labelinput1 {
+  position: inherit;
+  display: flex;
+  padding-left: 36px;
+  flex-wrap: wrap;
+  padding: 14px;
+  flex-direction: column;
+  
+  /*
+  margin-left: 54px; /* center the element horizontally 
+  margin-right: auto; /* center the element horizontally */
+ /* padding-bottom:10px ;
+  margin-top: 22px;
+  */
+}
+
+.labelinput1 label {
+  position: relative;
+ left:30px;
+  /* margin-right: 10px;  add some space between the labels */
+  font-family: monospace;
+ 
+  
+}
+.prenom{
+font-family: monospace;
+position: relative;
+left: 48px;
+}
+.inputinscrit1{
+  margin-right: -31px;
+  margin-left: 26px;
+  width: 405px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #100f0f;
+  background-color: #fcfcfc;
+  padding: 8px;
+
+}
+.labelinput5 {
+  display: flex;
+  margin-bottom: 5px;
+  align-items: flex-start;
+  flex-direction: row;
+  padding-left: 22px;
+  font-family: monospace;
+  padding-top: 3vw;
+  /*
+  margin-left: 54px; /* center the element horizontally 
+  margin-right: auto; /* center the element horizontally */
+ /* padding-bottom:10px ;
+  margin-top: 22px;
+  */
+}
+
+.labelinput5 label {
+  position: relative;
+  left:41px;
+  /* margin-right: 10px;  add some space between the labels */
+  font-family: monospace;
+}
+.inputinscrit5{
+  margin-right: -2px;
+  margin-left: -18px;
+  width: 210px; 
+  border: 2px solid #e5e5e5;
+  
+}
+/* .inputinscrit6 {
+  display: flex;
+  margin-bottom: 5px;
+  flex-direction: column-reverse;
+  padding-left: 58px;
+  align-items: flex-start;
+  padding-top:35px;
+}
+.inputinscrit6 label{
+  position: relative;
+  bottom: 90px;
+  font-family: monospace;
+} */
+.inputinscrit6 {
+  display: flex;
+  margin-bottom: 5px;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.inputinscrit6 label{
+  margin-left: -380px;
+  font-family: monospace;
+  margin-bottom: -10px;
+}
+.inputinscrit6:focus {
+  outline: none; 
+  border-color: #5a5a5a; 
+}
+
+.radios {
+  display: flex;
+  flex-direction: row;
+  margin-left:-91px; /* Add margin for spacing between radio buttons */
+}
+
+.bottom2 {
+   
+  cursor: pointer; /* Curseur de souris */
+  transition: all 0.3s ease; /* Transition effect for size change */
+   margin-top: 40px;
+
+
+  font-weight: bold;
+  font-size: 13px;
+ 
+  background-color:#e9d6b4;
+  margin: 20px;
+ 
+  width:30%;
+ min-height: 28px;
+ margin-left: 200px;
+ 
+}
+.bottom2:hover {
+  background-color: #fef4d2;
+}
+
+.labelinput3{
+  display: flex;
+  flex-direction: row;
+  padding: 17px;
+}
+
+
+.prole{
+  
+  right: 179px;
+  position: relative;
+  font-size: 14px;
+  margin-top: 11px;
+  top: 21px;
+  font-family: monospace;
+}
+.petab {
+  left: 91px;
+  position: relative;
+  font-family: monospace;
+}
+
+/* For radio buttons in labelinput4 */
+.labelinput4 input[type="radio"] {
+transform: scale(0.6); /* Adjust the scale factor as needed */
+margin-right: 5px; /* Add some space between radio button and label */
+margin-top: 20px; 
+  
+}
+
+.labelinput4 {
+  display: flex;
+  justify-content: center; /* Centre les éléments horizontalement */
+  margin-top: 3vw; /* Espace entre les groupes de boutons radio */
+  margin-bottom: 0;
+  
+}
+
+.radioWrapper {
+  display: flex;
+  flex-direction: column; /* Aligne les éléments verticalement */
+  align-items: center; /* Centre les éléments horizontalement */
+}
+
+.lab4 {
+  margin-top: 10px; /* Espace entre chaque bouton radio et son label */
+ 
+}
+.pgenre{
+  right: 211px;
+  position: relative;
+  font-size: 15px;
+  margin-top: 11px;
+  top: 21px;
+  font-family: monospace;
+}
+ 
+
+.inputinscrit6text {
+    
+  margin-top: 20px;
+  width: 484px;
+  resize: none;
+  border-color: #9e9e9e;    
+  outline: none;
+  height: 100px; 
+  overflow: hidden;
+  padding: 10px; /* Espacement interne pour le texte */
+  border: 2px solid #ccc; /* Bordure subtile */
+  border-radius: 8px; /* Bords arrondis */
+  resize: none; /* Permet à l'utilisateur de changer la taille verticalement */
+  outline: none; /* Supprime l'outline par défaut au focus */
+  box-shadow: none; /* Pas de shadow pour un look plus net */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Transition douce pour border et shadow */
+  font-size: 16px; /* Taille de texte appropriée */
+  color: #333; /* Couleur du texte */
+  background-color: #fff; /* Couleur de fond */ 
+}
+.inputinscrit6text:focus {
+  outline: none; /* Remove the default focus outline */
+  border-color: #5a5a5a; /* Change border color on focus */
+  box-shadow: 0 0 8px rgba(0, 102, 204, 0.3); /* Légère ombre portée au focus */
+}
+
+.inputinscrit6text::placeholder {
+  color: #aaa; /* Couleur du placeholder */
+}
+
+
+.header {
+  height: 56px;
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: fixed;
+}
+
+.link {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  
+  font-size: 16px;
+  transition: color 0.3s;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+.bottom1 {
+   
+  cursor: pointer; /* Curseur de souris */
+   
+   
+
+border: none;
+outline: none;
+  font-weight: bold;
+  font-size: 15px;
+  
+  background:transparent;
+  
+  margin-top: 40px;
+  width:30%;
+ min-height: 28px;
+ 
+
+
+ text-shadow: 2px 4px 19px #ffe5ad;
+ font-family: math;
+ color:#3d3322;
+ font-size: 13px;
+ 
+}
+
+.navlist {
+  display: flex;
+  list-style: none;
+  margin-right: 20px;
+  padding: 0;
+  align-items: flex-end;
+}
+.navitem {
+  color: white;
+  text-decoration: none;
+  width: 120px;
+  height: 53.44px;
+  font-size: 18px;
+  transition: color 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navitemsave {
+  color: white;
+  text-decoration: none;
+  width: 80px;
+  height: 53.44px;
+  font-size: 18px;
+  transition: color 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navitemsave:hover {
+  background-color: #f5f5f5;
+}
+
+.header a:hover {
+  color: #817139;
+}
+.logo {
+  position: absolute;
+  top: 45%;
+  left: 16px; 
+  transform: translateY(-50%);
+  height: 90px;
+  width: 192px;
+  padding-top: 38px;
+}
+
+.saveb2{
+  width: 45px;
+  height: 55px;
+
+}
+.icon{
+  width: 20px;
+  height: 25px;
+  padding-left:10px;
+  padding-bottom: 10px;
+}
+
+.logout{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.picon{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  
+  font-size: 15px;
+  padding-left: 8px;
+  transition: color 0.3s;
+}
+
+.navitem:hover {
+  background-color: #f5f5f5;
+}
+
+.navitem:active {
+  background-color: #e5e5e5;
+}
+

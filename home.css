@@ -1,0 +1,54 @@
+*{
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+}
+.background{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+.etudiant{
+    background-color: rgb(135 163 206);
+    /* rgb(115 145 187) */
+    width: fit-content;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+.entreprise{
+    background-color: rgb(201, 175, 197);
+    width: fit-content;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+.entreprise p{
+    margin-bottom:90px ;
+    font-size: 50px;
+}
+.entreprise:hover{
+    background-color: rgb(255, 255, 255);
+}
+.etudiant:hover{
+    background-color: rgb(255, 255, 255);
+}
+.etudiant p{
+    margin-bottom:90px ;
+    font-size: 50px;
+}
+.entimg{
+    width: 350px;
+    height: 250px;
+    border-radius: 146px;
+}

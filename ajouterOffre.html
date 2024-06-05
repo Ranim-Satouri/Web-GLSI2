@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modifier Offre</title>
+  <link rel="stylesheet" href="AjouterOffre.css">
+  <script src="ajouterOffre.js"></script>
+</head>
+<body>
+  <div class="background">
+    <div class="navbar"> 
+        <header class="header">
+          <img src="img/etud.png" alt="" class="logo">
+          <ul class="navlist">
+          <li class="navitem">
+              <a href="etudiant.html" class="link">
+              <img src="img/maison.png" alt="Acceuil" class="icon">
+              <p class="picon">Acceuil</p>
+              </a>
+          </li>
+          <li class="navitem">
+            <a href="Mesoffre.php" class="link">
+            <p class="picon">Mes Offres</p>
+            </a>
+          </li>
+          <li class="navitem">
+              <a href="profil.php" class="link">
+              <img src="img/utilisateur.png" alt="Save Offres" class="icon">
+              <p class="picon">Profil</p>
+              </a>
+          </li>
+          <li class="navitem">
+              <a href="Acceuil.html" class="link">
+              <img src="img/bloquer.png" alt="Log Out" class="icon">
+              <p class="picon">Deconnexion</p>
+              </a>
+          </li>
+          </ul>
+        </header>
+    </div>
+    <div class="aj"> 
+      <div class="loginf">
+        <form
+          action="ajouterOffre.php"
+          method="post"
+          class="login_form"
+          name="forme"
+          onsubmit="return verif()"
+        >
+          <p class="p1">Ajouter Offre</p>
+
+          <div class="inputGroupp">
+            <label for="titre" class="labele1">
+              Titre
+            </label>
+            <input
+              name="Titre"
+              class="inputinscrit"
+              type="text"
+              id="titre"
+              name="titre"
+            />
+          </div>
+          <div class="drops">
+            <div class="Catdrop">
+              <label for="categorie" class="labele2">
+                Catégorie
+              </label>
+              <select
+                class="select"
+                name="categorie"
+              >
+                <option value="0">Sélectionner une catégorie</option>
+                <option value="Babysitting">Babysitting</option>
+                <option value="Assistance">Assistance</option>
+                <option value="Enseignement">Enseignement</option>
+                <option value="Service_clientele">Service_clientele</option>
+                <option value="Caissier">Caissier</option>
+                <option value="Service_de_livraison">Service_de_livraison</option>
+                <option value="Bricolage">Bricolage</option>
+                <option value="Gestion_des_médias_sociaux">Gestion_des_médias_sociaux</option>
+                <option value="Nettoyage">Nettoyage</option>
+                <option value="Soins_aux_animaux">Soins_aux_animaux</option>
+                <option value="Informatique">Informatique</option>
+              </select>
+            </div>
+            <div class="Lieudrop">
+              <label for="lieu" class="labele3">
+                Lieu
+              </label>
+              <select
+                class="select"
+                name="lieu"
+              >
+              <option value="">selectionner un Lieu</option>
+              <option value="En Ligne">En Ligne</option>
+              <option value="Manouba">Manouba</option>
+              <option value="Tunis">Tunis</option>
+              <option value="Ben Arous">Ben Arous</option>
+              <option value="Béja">Béja</option>
+              <option value="Bizerte">Bizerte</option>
+              <option value="Gabès">Gabès</option>
+              <option value="Gafsa">Gafsa</option>
+              <option value="Jendouba">Jendouba</option>
+              <option value="Kairouan">Kairouan</option>
+              <option value="Kasserine">Kasserine</option>
+              <option value="Kébili">Kébili</option>
+              <option value="Kef">Kef</option>
+              <option value="Mahdia">Mahdia</option>
+              <option value="Médenine">Médenine</option>
+              <option value="Monastir">Monastir</option>
+              <option value="Nabeul">Nabeul</option>
+              <option value="Sfax">Sfax</option>
+              <option value="Sidi Bouzid">Sidi Bouzid</option>
+              <option value="Siliana">Siliana</option>
+              <option value="Sousse">Sousse</option>
+              <option value="Tataouine">Tataouine</option>
+              <option value="Tozeur">Tozeur</option>
+              <option value="Zaghouan">Zaghouan</option>
+              <option value="Online">Zaghouan</option>
+              </select>
+            </div>
+          </div>
+          <div class="inputGroupp">
+            <label for="description" class="labele4" >
+              Description
+            </label>
+            <textarea
+              name="desc"
+              id="description"
+              
+              class="inputdesc"
+            ></textarea>
+          </div>
+          <div class="btndiv">
+            <button type="submit" class="btn">
+              Ajouter Offre
+            </button>
+          </div>
+        </form>
+      </div>  
+    </div>
+  </div>
+</body>
+</html>

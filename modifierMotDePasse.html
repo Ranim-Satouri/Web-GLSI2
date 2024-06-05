@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modifiermdp</title>
+<link rel="stylesheet" href="modifierMotDePasse.css">
+<script src="modifierMotDePasse.js"></script>
+</head>
+<body>
+<div class="background">
+  <div class="navbar"> 
+    <div class="navbar"> 
+      <header class="header">
+        <img src="img/etud.png" alt="" class="logo">
+        <ul class="navlist">
+        <li class="navitem">
+            <a href="etudiant.html" class="link">
+            <img src="img/maison.png" alt="Acceuil" class="icon">
+            <p class="picon">Acceuil</p>
+            </a>
+        </li>
+        <li class="navitem">
+            <a href="Mesoffre.php" class="link">
+            <p class="picon">Mes Offres</p>
+            </a>
+        </li>
+        <li class="navitem">
+            <a href="profil.php" class="link">
+            <img src="img/utilisateur.png" alt="Save Offres" class="icon">
+            <p class="picon">Profil</p>
+            </a>
+        </li>
+       
+        <li class="navitem">
+            <a href="Acceuil.html" class="link">
+            <img src="img/bloquer.png" alt="Log Out" class="icon">
+            <p class="picon">Deconnexion</p>
+            </a>
+        </li>
+        </ul>
+    </header>
+</div>
+
+<div class="Modifiermdpbody">
+  <div class="tabcontent">
+    <form onsubmit="return verif()" class="mef" method="post"  action="modifierpwd.php" name="forme" >
+      <p class="p1inscrit">Modifier votre mot de passe</p>
+      
+      <div class="labelinput">
+        <label for="oldPassword">Ancien Mot de Passe</label>
+        <input
+          name="oldpwd"
+          type="password"
+          id="oldPassword"
+          name="oldPassword"
+          
+          onChange={handleInputChange}
+          class="inputinscrit" 
+        />
+      </div>
+     
+      <div class="labelinput">
+        <label for="newPassword">Nouveau Mot de Passe</label>
+        <input
+          name="newPassword"
+          type="password"
+          id="newPassword"
+          name="newPassword"
+          
+          onChange={handleInputChange}
+         
+          class="inputinscrit" 
+        />
+      </div>
+      
+      <div class="labelinput">
+        <label for="confirmPassword">Confirmer le Nouveau Mot de Passe</label>
+        <input
+          name="newPasswordverif"
+          type="password"
+          id="confirmPassword"
+          name="confirmPassword"
+          
+          onChange={handleInputChange}
+         
+          class="inputinscrit" 
+        />
+      </div>
+    
+      <button type="submit" class="bottom1">
+        Modifier Mot de Passe
+      </button>
+   </form>
+</div>
+</div>
+</div>
+</body>
+</html>

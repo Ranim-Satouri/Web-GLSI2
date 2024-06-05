@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etudiant</title>
+    <link rel="stylesheet" href="etudiant.css">
+</head>
+<body>
+    <div class="body">
+        <div class="navbar"> 
+            <header class="header">
+                <img src="img/etud.png" alt="" class="logo">
+                <ul class="navlist">
+                <li class="navitem">
+                    <a href="etudiant.html" class="link">
+                    <img src="img/maison.png" alt="Acceuil" class="icon">
+                    <p class="picon">Acceuil</p>
+                    </a>
+                </li>
+                <li class="navitem">
+                    <a href="profil.php" class="link">
+                    <img src="img/utilisateur.png" alt="Save Offres" class="icon">
+                    <p class="picon">Profil</p>
+                    </a>
+                </li>
+                <li class="navitem">
+                    <a href="Mesoffre.php" class="link">
+                    <p class="picon">Mes Offre</p>
+                    </a>
+                </li>
+                <li class="navitem">
+                    <a href="Acceuil.html" class="link">
+                    <img src="img/bloquer.png" alt="Log Out" class="icon">
+                    <p class="picon">Deconnexion</p>
+                    </a>
+                </li>
+                </ul>
+            </header>
+        </div>
+        <div class="home">
+            <div class="dropheader"> 
+                
+                    <div class="drop">
+                    <h2 class="h2">Les Offres Les plus récentes</h2>
+                    <div class="drops">
+                        <div class="Catdrop">
+                        <p class="categorietext">Categorie</p>
+                        <select class="select" id="categorie" onchange="handleChangeCategorie(event)">
+                            <option value="0">Tous</option>
+                            <option value="Babysitting">Babysitting</option>
+                            <option value="Assistance">Assistance</option>
+                            <option value="Enseignement">Enseignement</option>
+                            <option value="Service_clientele">Service_clientele</option>
+                            <option value="Caissier">Caissier</option>
+                            <option value="Service_de_livraison">Service_de_livraison</option>
+                            <option value="Bricolage">Bricolage</option>
+                            <option value="Gestion_des_médias_sociaux">Gestion_des_médias_sociaux</option>
+                            <option value="Nettoyage">Nettoyage</option>
+                            <option value="Soins_aux_animaux">Soins_aux_animaux</option>
+                            <option value="Informatique">Informatique</option>
+                        </select>
+                        </div>    
+                        <div class="Lieudrop">
+                        <p class="lieutext">Gouvernorat</p>
+                        <select class="select" id="lieu" onchange="handleChangeLieu(event)">
+                            <option value="">Tous</option>
+                            <option value="En Ligne">En Ligne</option>
+                            <option value="Manouba">Manouba</option>
+                            <option value="Tunis">Tunis</option>
+                            <option value="Ben Arous">Ben Arous</option>
+                            <option value="Béja">Béja</option>
+                            <option value="Bizerte">Bizerte</option>
+                            <option value="Gabès">Gabès</option>
+                            <option value="Gafsa">Gafsa</option>
+                            <option value="Jendouba">Jendouba</option>
+                            <option value="Kairouan">Kairouan</option>
+                            <option value="Kasserine">Kasserine</option>
+                            <option value="Kébili">Kébili</option>
+                            <option value="Kef">Kef</option>
+                            <option value="Mahdia">Mahdia</option>
+                            <option value="Médenine">Médenine</option>
+                            <option value="Monastir">Monastir</option>
+                            <option value="Nabeul">Nabeul</option>
+                            <option value="Sfax">Sfax</option>
+                            <option value="Sidi Bouzid">Sidi Bouzid</option>
+                            <option value="Siliana">Siliana</option>
+                            <option value="Sousse">Sousse</option>
+                            <option value="Tataouine">Tataouine</option>
+                            <option value="Tozeur">Tozeur</option>
+                            <option value="Zaghouan">Zaghouan</option>
+                            <option value="Online">Zaghouan</option>
+                        </select>
+                        </div>  
+                    </div>
+                    </div>
+                
+                <p id="message"></p>
+            </div>
+            <p id="message"></p>
+            <div id="offres" class="box">
+               
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("offres").innerHTML = this.responseText;
+                }
+            };
+            xhttp.open("GET", "offre.php", true);
+            xhttp.send();
+        };
+    </script>
+</body>
+</html>

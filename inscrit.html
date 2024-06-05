@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscription</title>
+  <link rel="stylesheet" href="inscrit.css">
+  <script src="inscrit.js"></script>
+</head>
+<body>
+  <div class="inscritbody">
+    <header class="insheader">
+      <img src="img/etud.png" alt='' class="inslogo"></img>
+      <ul class="insnavlist">
+        <li class="insnavitem"><a href="acceuil.html" class="link1">Acceuil</a></li>
+        <li class="insnavitem"><a href="login.html" class="link2">Login</a></li>
+      </ul>
+    </header>
+    <div id="inscrit" class="tabcontent">
+      <form class="registration_form" action="inscription.php" method="post" name="forme" onsubmit="return verif()">
+        <p class="p1inscrit">Créer votre compte</p>
+        <div class="labelinput1">
+          <label for="user_name"> </label>
+          <input type="text" id="user_name" name="nom"  autoComplete="off" placeholder="   entrer votre nom" value="" />
+          <p class="prenom"> </p>
+          <span style="display: inline-block; width: 10px;"></span>
+          <input type="text" name="prenom" id="user_family_name" autoComplete="off" placeholder="   entrer votre prénom" value="" />
+          <span style="display: inline-block; width: 10px;"></span>
+        </div>
+        <div id="inp" class="labelinput">
+          <label for="user_email"> </label>
+          <input type="email"  name="email" id="user_email" class="inputinscrit" autoComplete="off" placeholder="entrer votre e-mail" value="" />
+          <label for="tel"> </label>
+          <input type="text" name="tel" id="tel" class="inputinscrit" autoComplete="off" placeholder="entrer votre numéro de tél" value="" />
+        </div>
+        <div id="inp" class="labelinput">
+          <label for="user_pass"> </label>
+          <input type="password" name="pwd" id="user_pass" class="inputinscrit" autoComplete="off" placeholder="entrer votre mot de passe " value="" onchange="handleChangeMotDePasse(event)" />
+        </div>
+        <div id="inp" class="labelinput">
+          <label for="user_confirm_pass"> </label>
+          <input type="password" name="pwdverif" id="user_confirm_pass" class="inputinscrit" autoComplete="off" placeholder="confirmer votre mot de passe" value="" onchange="handleChangeConfirmationMotDePasse(event)" />
+        </div>
+        <div id="inp" class="labelinput">
+          <label for="datenai"> </label>
+          <input type="date" name="datenai" id="datenai" class="inputinscrit" autoComplete="off" placeholder="" value="" onchange="handleChangeDateNaissance(event)" />
+        </div>
+        <p class="pgenre">Genre</p>
+        <div class="labelinput4">
+          <label>
+            <input type="radio" name="genre" value="male" class="inputinscrit4" checked onchange="handleChangegenre(event)" /> Homme </label>
+          <label>
+            <input type="radio" name="genre" value="female" class="inputinscrit4" onchange="handleChangegenre(event)" /> Femme</label>
+        </div>
+        <p class="prole">Choisir un rôle</p>
+        <div  class="labelinput3">
+          <label> Étudiant </label><input type="radio" name="role" value="student" id="studentRadio" class="inputinscrit3" />
+          <label>
+            <input type="radio"   name="role" id="niveau"  autoComplete="off" placeholder="Niveau" value="employer"  />
+
+            Employeur </label>
+        </div>
+        <button type="submit" id="but" class="bottom1"  ><span>S'inscrire</span></button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
